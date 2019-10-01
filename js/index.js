@@ -9,11 +9,14 @@ funBusLogo.addEventListener('mouseleave', () => {
     funBusLogo.style.transition = 'all 1s';
 })
 
-// const midImages = document.querySelectorAll('.img-content');
+const midImages = document.querySelectorAll('.img-content');
 
-// midImages.addEventListener('click', (element) => {
-//     element.style.transform = 'rotate(90deg)';
-// })
+midImages.forEach(element => {
+element.addEventListener('click', () => {
+    element.style.transform = 'rotate(360deg)';
+    element.style.transition = 'all 3s';
+})
+})
 
 const hiddenMessage = document.getElementById('hidden');
 hiddenMessage.addEventListener('mouseover', () => {
@@ -22,3 +25,11 @@ hiddenMessage.addEventListener('mouseover', () => {
 hiddenMessage.addEventListener('mouseout', () => {
     hiddenMessage.style.color = 'white';
 })
+
+// const navLinks = document.querySelectorAll(nav a)
+
+// const midImages = document.querySelectorAll('.img-content');
+// console.log(midImages);
+// window.addEventListener('scroll', () => {
+//     midImages[0].src = 'img/Magic-Schoolbus-Event-Page.jpg';
+// })
